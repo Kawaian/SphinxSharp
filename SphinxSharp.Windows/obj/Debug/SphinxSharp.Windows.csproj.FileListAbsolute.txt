@@ -1,0 +1,11 @@
+G:\Users\Matyas\Projects\KWSub\Source\External\SphinxSharp\SphinxSharp.Windows\obj\Debug\SphinxSharp.Windows.csprojResolveAssemblyReference.cache
+G:\Users\Matyas\Projects\KWSub\Source\External\SphinxSharp\SphinxSharp.Windows\obj\Debug\SphinxSharp.Windows.csproj.CoreCompileInputs.cache
+G:\Users\Matyas\Projects\KWSub\Source\External\SphinxSharp\SphinxSharp.Windows\bin\Debug\SphinxNative.Base.dll
+G:\Users\Matyas\Projects\KWSub\Source\External\SphinxSharp\SphinxSharp.Windows\bin\Debug\SphinxNative.dll
+G:\Users\Matyas\Projects\KWSub\Source\External\SphinxSharp\SphinxSharp.Windows\bin\Debug\SphinxWrap.dll
+G:\Users\Matyas\Projects\KWSub\Source\External\SphinxSharp\SphinxSharp.Windows\bin\Debug\SphinxSharp.Windows.dll
+G:\Users\Matyas\Projects\KWSub\Source\External\SphinxSharp\SphinxSharp.Windows\bin\Debug\SphinxSharp.Windows.pdb
+G:\Users\Matyas\Projects\KWSub\Source\External\SphinxSharp\SphinxSharp.Windows\bin\Debug\SphinxSharp.dll
+G:\Users\Matyas\Projects\KWSub\Source\External\SphinxSharp\SphinxSharp.Windows\bin\Debug\SphinxSharp.pdb
+G:\Users\Matyas\Projects\KWSub\Source\External\SphinxSharp\SphinxSharp.Windows\obj\Debug\SphinxSharp.Windows.dll
+G:\Users\Matyas\Projects\KWSub\Source\External\SphinxSharp\SphinxSharp.Windows\obj\Debug\SphinxSharp.Windows.pdb

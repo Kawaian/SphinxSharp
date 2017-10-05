@@ -1,0 +1,5 @@
+G:\Users\Matyas\Projects\KWSub\Source\External\SphinxSharp\SphinxSharp\bin\Debug\SphinxSharp.dll
+G:\Users\Matyas\Projects\KWSub\Source\External\SphinxSharp\SphinxSharp\bin\Debug\SphinxSharp.pdb
+G:\Users\Matyas\Projects\KWSub\Source\External\SphinxSharp\SphinxSharp\obj\Debug\SphinxSharp.csproj.CoreCompileInputs.cache
+G:\Users\Matyas\Projects\KWSub\Source\External\SphinxSharp\SphinxSharp\obj\Debug\SphinxSharp.dll
+G:\Users\Matyas\Projects\KWSub\Source\External\SphinxSharp\SphinxSharp\obj\Debug\SphinxSharp.pdb
