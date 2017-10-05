@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{A0E555B2-8A4B-4724-8174-0CC1256E8074}</ProjectGuid>
+    <RootNamespace>SphinxNativeWindows</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>obj\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
+    <TargetName>SphinxNative</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>obj\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
+    <TargetName>SphinxNative</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>obj\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>SphinxNative</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>obj\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>SphinxNative</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)../SphinxNative/include;$(ProjectDir)../SphinxNative/src/libpocketsphinx;$(SolutionDir)/SphinxNative/include/win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_USRDLL;SPHINX_DLL;POCKETSPHINX_EXPORTS;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4244;4018;4312;4311;4090;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)../SphinxNative/include;$(ProjectDir)../SphinxNative/src/libpocketsphinx;$(SolutionDir)/SphinxNative/include/win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_USRDLL;SPHINX_DLL;POCKETSPHINX_EXPORTS;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4244;4018;4312;4311;4090;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)../SphinxNative/include;$(ProjectDir)../SphinxNative/src/libpocketsphinx;$(SolutionDir)/SphinxNative/include/win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_USRDLL;SPHINX_DLL;POCKETSPHINX_EXPORTS;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4244;4018;4312;4311;4090;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)../SphinxNative/include;$(ProjectDir)../SphinxNative/src/libpocketsphinx;$(SolutionDir)/SphinxNative/include/win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_USRDLL;SPHINX_DLL;POCKETSPHINX_EXPORTS;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4244;4018;4312;4311;4090;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\acmod.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\allphone_search.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\bin_mdef.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\blkarray_list.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\dict.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\dict2pid.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\fsg_history.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\fsg_lextree.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\fsg_search_internal.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\hmm.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\kws_detections.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\kws_search.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\mdef.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\ms_gauden.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\ms_mgau.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\ms_senone.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\ngram_search.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\ngram_search_fwdflat.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\ngram_search_fwdtree.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\phone_loop_search.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\pocketsphinx_internal.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\ps_alignment.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\ps_lattice_internal.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\ptm_mgau.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\s2_semi_mgau.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\s3types.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\state_align_search.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\tied_mgau_common.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\tmat.h" />
+    <ClInclude Include="..\SphinxNative\src\libpocketsphinx\vector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\acmod.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\allphone_search.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\bin_mdef.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\blkarray_list.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\dict.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\dict2pid.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\fsg_history.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\fsg_lextree.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\fsg_search.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\hmm.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\kws_detections.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\kws_search.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\mdef.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\ms_gauden.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\ms_mgau.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\ms_senone.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\ngram_search.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\ngram_search_fwdflat.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\ngram_search_fwdtree.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\phone_loop_search.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\pocketsphinx.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\ps_alignment.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\ps_lattice.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\ps_mllr.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\ptm_mgau.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\s2_semi_mgau.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\state_align_search.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\tmat.c" />
+    <ClCompile Include="..\SphinxNative\src\libpocketsphinx\vector.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="SphinxNative.Base.Windows.vcxproj">
+      <Project>{6a809a7f-fa71-454d-97d2-659482caa9c6}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
